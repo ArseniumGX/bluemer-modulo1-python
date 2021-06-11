@@ -7,8 +7,8 @@ num1 = int(input("Digite o primeiro valor: "))
 num2 = int(input("Digite o segundo valor: "))
 
 if num1 > num2:
-    print(f"\n{num1} é maior que {num2}.")
+    print(f"\n{num1} é maior!")
 elif num1 < num2:
-    print(f"\n{num2} é maior que {num1}.")
+    print(f"\n{num2} é maior!")
 else:
-    print(f"\nNúmeros iguais!")
+    print(f"\nNúmeros iguais.")

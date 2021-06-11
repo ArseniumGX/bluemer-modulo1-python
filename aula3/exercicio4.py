@@ -4,11 +4,18 @@ Conforme a letra escrever: F - Feminino, M - Masculino, caso escreva
 outra letra: Sexo Inválido.
 """
 
-sexo = input("Digite F - Feminino ou M - Masculino: \n> ")[0].upper()
+sexo = input("Qual seu sexo biológico? [F/M]: ").upper().strip()[0]
 
-if sexo == 'F':
+""" if sexo == 'F':
     print("\nFeminino.")
 elif sexo == 'M':
     print("\nMasculino.")
 else:
-    print("\nSexo inválido.")
+    print("\nSexo biológico inválido.") """
+
+# Diferentão
+
+if sexo == 'M' or sexo == 'F':
+    print("\nMasculino") if sexo == 'M' else print('\nFeminino')
+else:
+    print("\nSexo biológico inválido.")
