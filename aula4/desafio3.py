@@ -45,4 +45,3 @@ if valor >= 10 and valor <= 600:
         print(f'{nota1} nota(s) de 1')
 else:
     print("Valor muito baixo.") if valor < 10 else print("Valor muito alto.")
-
