@@ -32,13 +32,17 @@ nota5 = (((valor%100)%50)%10) // 5
 nota1 = ((((valor%100)%50)%10)%5) // 1
 
 if valor >= 10 and valor <= 600:
-    print(f'''
-    Seu saque será de {valor} será com:
-    {nota100} nota(s) de 100
-    {nota50} nota(s) de 50
-    {nota10} nota(s) de 10
-    {nota5} nota(s) de 5
-    {nota1} nota(s) de 1
-    ''')
+    print(f'Seu saque será de R$ {valor} será com:')
+    if nota100:
+        print(f'{nota100} nota(s) de 100')
+    if nota50:
+        print(f'{nota50} nota(s) de 50')
+    if nota10:
+        print(f'{nota10} nota(s) de 10')
+    if nota5:
+        print(f'{nota5} nota(s) de 5')
+    if nota1:
+        print(f'{nota1} nota(s) de 1')
 else:
     print("Valor muito baixo.") if valor < 10 else print("Valor muito alto.")
+
