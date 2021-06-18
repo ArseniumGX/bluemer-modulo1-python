@@ -1,0 +1,28 @@
+# Projetos Avaliativos
+Pasta destinada a publicação dos projetos avaliativos que serã desenvolvidos no decorrer do módulo. 
+Abaixo será listados os projetos já desenvolvidos, a descrição de cada um e status.
+
+## Projeto 1 - O Detetive
+  Arquivo projeto1.py
+  
+  Projeto desenvolvivo utilizando apenas print(), input(), e condicionais if..elif..else. Como diferencial foi utilizado a função sleep()
+da biblioteca time.
+ 
+### STATUS
+- [x] Concluido!
+- [ ] Avaliado!
+
+---
+
+# Projeto 2 - O Jokenpô
+  Arquivo projeto2.py
+
+  Projeto de um jogo de jokenpô em que o player escolhe quantas todas quer jogar. O player vai jogar contra o computador, aqui apelidado
+de Scottfish (uma referência a IA analítica de jogos de xadrex). Para esse projeto foi utilizado condicionais, laços de repetição, pouco de listas
+e bibliotecas random e os.
+
+### STATUS
+- [ ] Concluido!
+- [ ] Avaliado!
+
+  
