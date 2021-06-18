@@ -4,4 +4,4 @@
 ### Tema:
  - Laço while
 
-Estrutura de repetição while e forma uso do laço infinito while true.
+Estrutura de repetição while, forma uso do laço infinito while true e exercícios de fixação sobre o tema.
