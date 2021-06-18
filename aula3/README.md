@@ -1,2 +1,7 @@
 # Aula 3 :book:
-Lista de exercícios referente a aula 3 sobre manupulação com string e condicional if..else
+## Date 09/06/2021
+---
+### Tema:
+ - Condicional if..elif..else
+ - str()
+ - Manipulação de strings
