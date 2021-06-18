@@ -5,7 +5,7 @@ Abaixo será listados os projetos já desenvolvidos, a descrição de cada um e 
 ## Projeto 1 - O Detetive
   Arquivo projeto1.py
   
-  Projeto desenvolvivo utilizando apenas print(), input(), e condicionais if..elif..else. Como diferencial foi utilizado a função sleep()
+  Projeto de um detetive virtual que analiza o grau de envolvimento de uma pessoa em um crime com base em 5 perguntas que a ser respondidas. Desenvolvivo utilizando apenas print(), input(), e condicionais if..elif..else. Como diferencial foi utilizado a função sleep()
 da biblioteca time.
  
 ### STATUS
@@ -14,12 +14,10 @@ da biblioteca time.
 
 ---
 
-# Projeto 2 - O Jokenpô
+# Projeto 2 - Jokenpô Game
   Arquivo projeto2.py
 
-  Projeto de um jogo de jokenpô em que o player escolhe quantas todas quer jogar. O player vai jogar contra o computador, aqui apelidado
-de Scottfish (uma referência a IA analítica de jogos de xadrex). Para esse projeto foi utilizado condicionais, laços de repetição, pouco de listas
-e bibliotecas random e os.
+  Projeto de um jogo de jokenpô em que o player escolhe quantas todas quer jogar. O player vai jogar contra o computador, aqui apelidado de Scottfish (uma referência a IA analítica de jogos de xadrex). Para esse projeto foi utilizado condicionais, laços de repetição, pouco de listas e bibliotecas random e os.
 
 ### STATUS
 - [ ] Concluido!
