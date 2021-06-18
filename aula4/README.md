@@ -1,2 +1,6 @@
 # Aula 4 :book:
-Aula sobre condicional if...elif...else e dia de exercitar o aprendizado até aqui.
+## Date 10/06/2021
+---
+### CodeLab
+
+  Término do assunto sobre condicionais e resolução de exercícios sobre manipulação de string, condicionais e o resto do conteúdo visto até aqui.
