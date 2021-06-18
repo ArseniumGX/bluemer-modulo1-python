@@ -1,2 +1,12 @@
 # Aula 1 :book:
-Aula sobre comandos print e input, variáveis; operadores lógicos, aritméticos e relacionais
+## Date - 07/06/21
+---
+### Temas:
+ - print() 
+ - input() 
+ - variáveis
+
+ - operadores lógicos
+ - aritméticos
+ - relacionais
+
