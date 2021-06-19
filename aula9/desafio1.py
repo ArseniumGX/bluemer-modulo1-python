@@ -17,18 +17,25 @@ print(f'''
 ''')
 
 jogos = list()
-numeroJogos = int(input('\n\n___QTD Jogos: '))
+numeroJogos = int(input('\n\nQTD Jogos: '))
 
 for l in range(numeroJogos):
+    cont = 0
     jogo = list()
-    for c in range(6):
-        jogo.insert(c, randint(1,60))
+    while True:
+        numero = randint(1,60)
+        if numero not in jogo:
+            jogo.append(numero)
+            cont += 1
+        if cont == 6:
+            break
     
-    jogos.insert(l, jogo)
+    jogo.sort()
+    jogos.append(jogo)
 
-print(f'''
+print(f'''\n\n
 Seus número da sorte (ou não) são...
 ------------------------------------
 ''')
-for l in range(len(jogos)):
-    print(jogos[l])
+for (i, v) in enumerate(jogos):
+    print('{} Jogo: {}'.format(i+1, v))
