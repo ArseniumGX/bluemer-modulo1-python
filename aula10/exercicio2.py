@@ -19,8 +19,10 @@ matriz = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
     
 #     matriz.append(data[:])
 
-for m in matriz:
-    print(m)
+for l in matriz:
+    for c in l:
+        print(' [ {} ] '.format(c), end="")
+    print()
 
 # Parte - 02 
 # Aprimore o desafio anterior, mostrando no final:
