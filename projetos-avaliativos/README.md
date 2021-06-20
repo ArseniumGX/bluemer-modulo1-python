@@ -10,6 +10,7 @@ da biblioteca time.
  
 ### STATUS
 - [x] Concluido!
+- [x] Enviado!
 - [ ] Avaliado!
 
 ---
@@ -20,7 +21,8 @@ da biblioteca time.
   Projeto de um jogo de jokenpô em que o player escolhe quantas todas quer jogar. O player vai jogar contra o computador, aqui apelidado de Scottfish (uma referência a IA analítica de jogos de xadrex). Para esse projeto foi utilizado condicionais, laços de repetição, pouco de listas e bibliotecas random e os.
 
 ### STATUS
-- [ ] Concluido!
+- [x] Concluido!
+- [ ] Enviado!
 - [ ] Avaliado!
 
   
