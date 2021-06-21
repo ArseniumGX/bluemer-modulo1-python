@@ -22,7 +22,7 @@ da biblioteca time.
 
 ### STATUS
 - [x] Concluido!
-- [ ] Enviado!
+- [x] Enviado!
 - [ ] Avaliado!
 
   
