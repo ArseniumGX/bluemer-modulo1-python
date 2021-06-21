@@ -8,8 +8,8 @@
 # [  7  ][  8  ][  9  ] 
 
 matriz = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-# matriz = list()
 
+# matriz = list()
 # print('Digite os valores da matriz: ')
 # for l in range(3):
 #     data = list()
@@ -19,10 +19,10 @@ matriz = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
     
 #     matriz.append(data[:])
 
-for l in matriz:
-    for c in l:
-        print(' [ {} ] '.format(c), end="")
-    print()
+# for l in matriz:
+#     for c in l:
+#         print(' [ {} ] '.format(c), end="")
+#     print()
 
 # Parte - 02 
 # Aprimore o desafio anterior, mostrando no final:
@@ -32,8 +32,10 @@ for l in matriz:
 
 soma = 0
 for l in matriz:
-    soma += sum(l)
-print('A soma de todos os valores da matriz é {}.'.format(soma))
+    for c in l:
+        if c % 2 == 0:
+            soma += c
+print('A soma de todos os valores pares da matriz é {}.'.format(soma))
 
 somaTerceira = 0
 for l in matriz:

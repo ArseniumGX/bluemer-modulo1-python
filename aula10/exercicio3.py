@@ -6,12 +6,11 @@
 #   Mostre o maior peso
 #   Mostre o menor peso
 
-galera = list()
+pessoas = list()
 cont = 0
 
 while True:
-    pessoa = [str(input('Nome: ')), float(input('Peso: '))]
-    galera.append(pessoa)
+    pessoas.append([str(input('Nome: ')), float(input('Peso: '))])
     cont += 1
 
     fim = str(input('\nDeseja cadastrar mais pessoas? [S/N]: ')).upper().strip()[0]
@@ -25,10 +24,10 @@ while True:
 
 pesos = list()
 
-for i in galera:
+for i in pessoas:
     pesos.append(i[1])
 
 print(pesos)
-print('Foram cadastradas {} pessoas.'.format(len(galera)))
+print('Foram cadastradas {} pessoas.'.format(len(pessoas)))
 print('O maior peso é {}.'.format(max(pesos)))
 print('O menor peso é {}.'.format(min(pesos)))
