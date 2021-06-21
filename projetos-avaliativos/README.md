@@ -11,7 +11,7 @@ da biblioteca time.
 ### STATUS
 - [x] Concluido!
 - [x] Enviado!
-- [ ] Avaliado!
+- [x] Avaliado!
 
 ---
 
