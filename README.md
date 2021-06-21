@@ -1,7 +1,10 @@
-<h1 align="center"> Bluemer - Módulo I</h1>
+<h1 align="center"> Bluemer - Módulo I </h1>
+<h3 align="center"> Lógica de Programação </h3>
 
 <p align="justify">
 &emsp;Exercícios do curso de certificação da Blue EdTech. Aqui estão armazenado todos os códigos fonte desenvolvidos para fixação de conteúdo divididos em pastas com uma descrição do que cada aula foi abordada, juntamente com a data.
+
+&emsp;Este módulo foi aplicando usando a linguagem de programação <a href="https://www.python.org/" title="Site Python">Python</a> para explicação do conteúdo e por ser uma linguagem de fácil entendimento.
 
 &emsp;Segue abaixo os links para os projetos:
  - <a href="./projetos-avaliativos/projeto1.py">Projeto 1 - Detetive</a>
