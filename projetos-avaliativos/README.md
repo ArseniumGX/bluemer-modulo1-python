@@ -13,6 +13,8 @@ da biblioteca time.
 - [x] Enviado!
 - [x] Avaliado!
 
+<strong>Nota:</strong> 10.0
+
 ---
 
 # Projeto 2 - Jokenpô Game
