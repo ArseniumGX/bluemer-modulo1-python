@@ -12,16 +12,16 @@
 # perguntar ao usuário se deseja continuar a resposta seja somente sim ou não.
 
 povoado = list() or []
-povo = dict() or {'nome': None, 'idade': None, 'sexoBiologico': None}
+povo = dict() or {'nome': None, 'idade': None, 'genero': None}
 
 while True:
     povo['nome'] = str(input('Nome da Pessoa: ')).strip()
     povo['idade'] = int(input('Idade da Pessoa: '))
-    povo['sexoBiologico'] = str(input('Sexo biológico. [M/F]: ')).strip().upper()[0]
+    povo['genero'] = str(input('Gênero. [M/F]: ')).strip().upper()[0]
 
-    while povo['sexoBiologico'] not in 'MF':
+    while povo['genero'] not in 'MF':
         print('Digite apenas M(masculino) ou F(feminino).')
-        povo['sexoBiologico'] = str(input('Sexo biológico. [M/F]: ')).strip().upper()[0]
+        povo['genero'] = str(input('Gênero. [M/F]: ')).strip().upper()[0]
 
     povoado.append(povo.copy())
 
@@ -47,7 +47,7 @@ print('A média de idade das pessoas é {} anos.'.format(media))
 # C) Uma lista com as mulheres.
 mulheres = list()
 for i in povoado:
-    if i['sexoBiologico'] == 'F':
+    if i['genero'] == 'F':
         mulheres.append(i['nome'][:])
 print(mulheres)
 
