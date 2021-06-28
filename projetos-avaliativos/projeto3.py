@@ -7,6 +7,16 @@ rodadas = int()
 empates = int()
 vencedor = None
 
+print('''
++-----------====[ Bem Vindo ]====-----------
+|      Esse é o simulador de jogo de dados. As
+| rodadas acontecem de forma automatizada. Para 
+| iniciar digite a quantidade de rodadas que você
+| deseja jogar. Aqui você será representado(a) no 
+| papel do 'Jogador 1'. Que o jogo comece!
++-------------------------------------------
+''')
+
 while True:
     player1 = {'Jogador': 'Jogador 1', 'dados': [], 'vitorias': int()}
     player2 = {'Jogador': 'Jogador 2', 'dados': [], 'vitorias': int()}
@@ -15,13 +25,16 @@ while True:
     empates = 0
     jogos = None
 
-    rodadas = int(input('QTD Rodadas: '))
-
+    rodadas = int(input('\nQTD Rodadas: '))
+    
     while not rodadas > 0:
         print('Você não pode jogar {} rodada.'.format(rodadas))
         rodadas = int(input('QTD Rodadas: '))
 
     for i in range(rodadas):
+        system('clear')
+        print('===== JOGANDO DADOS =====')
+
         dadoP1 = randint(1,6)
         dadoP2 = randint(1,6)
         dadoP3 = randint(1,6)
@@ -49,21 +62,25 @@ while True:
         player4['dados'].sort(reverse=True)
 
         print('Jogador 1: {} no dado.'.format(dadoP1))
-        # sleep(1)
+        sleep(1)
         print('Jogador 2: {} no dado.'.format(dadoP2))
-        # sleep(1)
+        sleep(1)
         print('Jogador 3: {} no dado.'.format(dadoP3))
-        # sleep(1)
+        sleep(1)
         print('Jogador 4: {} no dado.'.format(dadoP4))
-        # sleep(1)
+        sleep(1)
 
         system('clear')
 
+    print('Fim as rodadas!\n')
+
     jogos = (player1.copy(), player2.copy(), player3.copy(), player4.copy())
 
+    print('-----{ Os jogador(es) com mais vitórias nas rodadas }-----')
     for i in jogos:
-        print(i)
-    
+        if i['vitorias'] > 0:
+            print('O {} venceu {} rodadas.'.format(i['Jogador'], i['vitorias']))
+            
     if jogos[0]['vitorias'] > jogos[1]['vitorias'] and jogos[0]['vitorias'] > jogos[2]['vitorias'] and jogos[0]['vitorias'] > jogos[3]['vitorias']:
         print('O vencendor foi o Jogador 1 com {} vitórias'.format(jogos[0]['vitorias']))
     elif jogos[1]['vitorias'] > jogos[0]['vitorias'] and jogos[1]['vitorias'] > jogos[2]['vitorias'] and jogos[1]['vitorias'] > jogos[3]['vitorias']:
@@ -74,10 +91,10 @@ while True:
         print('O vencendor foi o Jogador 4 com {} vitórias'.format(jogos[3]['vitorias']))
     else:
         print('Ninguém venceu, empates!')
-        
-    print('Ao todo foram jogadas {} rodadas.'.format(rodadas))
+
+
+    print('\nAo todo foram jogadas {} rodadas.'.format(rodadas))
     print('{} empates no total.'.format(empates))
-    print('Fim de jogo!')
     print('')
         
     # Instruções de encerramento de jogo
@@ -86,6 +103,11 @@ while True:
         print('Opção inválida!')
         fim = str(input('Deseja jogar mais partidas? [S/N]: ')).upper().strip()[0]
     if fim == 'N':
+        system('clear')
         break
     else:
         continue
+
+print('Obrigado por jogar!')
+sleep(3)
+system('clear')
