@@ -9,6 +9,7 @@
 &emsp;Segue abaixo os links para os projetos:
  - <a href="./projetos-avaliativos/projeto1.py">Projeto 1 - Detetive</a>
  - <a href="./projetos-avaliativos/projeto2.py">Projeto 2 - Jokenpô</a>
+ - <a href="./projetos-avaliativos/projeto3.py">Projeto 3 - Jogo de Dados</a>
 
 
 ---
