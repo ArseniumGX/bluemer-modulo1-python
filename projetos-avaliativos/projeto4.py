@@ -1,9 +1,19 @@
 # Projeto 04 - Voto Votado
 
 from datetime import date
-from os import system
 from random import choice
 from time import sleep
+
+## Função pra limpar terminal
+def clear():
+    import platform
+    import os
+    if platform.system() == 'Windowns':
+        os.system('cls')
+    elif platform.system() == 'Linux':
+        os.system('clear')
+    else:
+        return None
 
 def autorizaVoto(anoNascimento:int):
     idade = date.today().year - anoNascimento
@@ -52,7 +62,7 @@ urna = [{'candidato': candidatoA, 'votos': int()},
 
 
 while True:
-    system('clear')
+    clear()
 
     # Valida que o que o usuário dititar é numérico
     auth = input('Digite seu ano de seu nascimento: ')
@@ -61,7 +71,7 @@ while True:
         auth = input('Digite seu ano de seu nascimento: ')
     auth = int(auth)
     
-    system('clear')
+    clear()
     
     print('''
     +---------======-{{ VOTAÇÃO }}-======---------
@@ -91,7 +101,7 @@ while True:
 
     # Opção término da eleição em caso de opção == 0
     elif options == 0:
-        system('clear')
+        clear()
         break
 
     # Condicional força o loop para a próxima interação caso options seja diferente de 0 1 2 3 4 5
@@ -126,4 +136,4 @@ for i in range(3):
 
 print(f"O candidato {vencedor['candidato']} venceu a eleição com {round(100 * vencedor['votos']/votosValidos, 2)}% dos votos válidos.")
 input('\t\tTecle enter para continuar...')
-system('clear')
+clear()
