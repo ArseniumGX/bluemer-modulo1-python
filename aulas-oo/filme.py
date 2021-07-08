@@ -15,4 +15,3 @@ class Filme(Catalogo):
     @duracao.setter
     def duracao(self, value):
         self.__duracao = value
-
